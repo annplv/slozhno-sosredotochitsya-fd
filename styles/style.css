@@ -17,7 +17,8 @@
   margin: 0 10px;
 }
 
-.header::before, .footer::before {
+.header::before,
+.footer::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -28,7 +29,8 @@
   top: 10px;
 }
 
-.header::after, .footer::after {
+.header::after,
+.footer::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -53,19 +55,20 @@
 }
 
 .rec::after {
-  content:" ";
+  content: " ";
   position: absolute;
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #FF0070;
-  box-shadow: 0px 0px 4px 2px #FF0070;
+  background-color: #ff0070;
+  box-shadow: 0px 0px 4px 2px #ff0070;
   margin-left: 9px;
   margin-top: 8px;
   flex-shrink: 0;
 }
 
-.header_title, .footer_title {
+.header_title,
+.footer_title {
   font-family: var(--main-font);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--title-color);
@@ -120,7 +123,7 @@
 }
 
 .title-decor-header {
-  margin-bottom: 66px; 
+  margin-bottom: 66px;
 }
 
 .header_text {
@@ -157,7 +160,7 @@
 }
 
 .section_title {
-  color:var(--accent-color);
+  color: var(--accent-color);
   font-family: var(--main-font);
   font-size: var(--text-size);
   line-height: 23.4px;
@@ -191,7 +194,8 @@
   font-weight: 400;
 }
 
-.gallery, .image_container {
+.gallery,
+.image_container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
@@ -218,21 +222,25 @@
 }
 
 @media (width >= 768px) {
-  .header, .footer {
+  .header,
+  .footer {
     min-height: 1024px;
   }
-  .header_title, .footer_title {
+  .header_title,
+  .footer_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header {
     grid-template-rows: 1fr min-content 1fr;
     margin: 0;
   }
-  .header::before, .footer::before {
+  .header::before,
+  .footer::before {
     right: 20px;
     top: 20px;
   }
-  .header::after, .footer::after {
+  .header::after,
+  .footer::after {
     left: 20px;
     bottom: 20px;
   }
@@ -263,7 +271,7 @@
     grid-row: 2;
     grid-column: 1/ -1;
   }
-  .gallery{
+  .gallery {
     gap: 20px;
   }
   .image_container {
@@ -296,7 +304,8 @@
 }
 
 @media (width >= 1024px) {
-  .header, .footer {
+  .header,
+  .footer {
     min-height: 768px;
   }
   .header__theme-menu {
@@ -317,7 +326,7 @@
   .card-list_container:nth-child(2) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .card-list_container:nth-child(2) .card_list{
+  .card-list_container:nth-child(2) .card_list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
